@@ -15,7 +15,12 @@
             document.getElementById("valueB").innerHTML = num2;
             /*document.getElementById("valueC").innerHTML = num1 + num2;*/
             document.getElementById("valueC").innerHTML = Number(num1) + Number(num2);
+        }    
+        
+        function whatTimeIsIt(){
+            alert(new Date());
         }
+        
     </script>
 </head>
 <body>
@@ -30,6 +35,9 @@
     <h3>세번째 크기 헤드라인</h3>
     <h4>세번째 크기 헤드라인</h4>
     <h5>세번째 크기 헤드라인</h5>
+
+    <button onclick="whatTimeIsIt()">현재시간</button>
+    <hr>
 
     <label for="inputA">첫번째 입력값</label>
     <input id="inputA" value=10 onkeyup="doSomething()">

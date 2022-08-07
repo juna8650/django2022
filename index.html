@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <title>웹사이트 만들기</title>
     <link href="./practice.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript">
+        function doSomething(){
+            let num1 = document.getElementById("inputA").value;
+            /*alert(a)*/
+            let num2 = document.getElementById("inputB").value;
+
+            document.getElementById("valueA").innerHTML = num1;
+            document.getElementById("valueB").innerHTML = num2;
+            /*document.getElementById("valueC").innerHTML = num1 + num2;*/
+            document.getElementById("valueC").innerHTML = Number(num1) + Number(num2);
+        }
+    </script>
 </head>
 <body>
     <nav>
@@ -17,6 +30,17 @@
     <h3>세번째 크기 헤드라인</h3>
     <h4>세번째 크기 헤드라인</h4>
     <h5>세번째 크기 헤드라인</h5>
+
+    <label for="inputA">첫번째 입력값</label>
+    <input id="inputA" value=10 onkeyup="doSomething()">
+
+    <label for="inputB">두번째 입력값</label>
+    <input id="inputB" value=20 onkeyup="doSomething()">
+
+    <p>
+        <span id="valueA">10</span> + <span id="valueB">20</span> = <span id="valueC">30</span>
+    </p>
+    
 
     <p>하이퍼링크 연결</p>
     <a href="https://google.com">Go to google</a>

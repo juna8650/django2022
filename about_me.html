@@ -44,14 +44,34 @@
     </nav>     -->
 
     <div class="container">
-        <h1>About me</h1>
-        <h2>한양공업고등학교 컴퓨터네트워크과에 소속되어 있습니다.</h2>
-        
-        <p>HTML, CSS, JS, DJANGO, DATABASE 를 다룰 수 있습니다.</p>
-        <a href="index.html">첫 화면으로 가기</a><br>
-        <button onclick="whatTimeIsIt()">현재시간</button>
-        <hr>
-        <img src="./images/coding.jpg" width="800px">
+        <div class="row"> <!-- Grid는 12 구역으로 나뉘어 있음-->
+            <div class="col-9"> 
+                <h1>About me</h1>
+                <h2>한양공업고등학교 컴퓨터네트워크과에 소속되어 있습니다.</h2>
+                
+                <p>HTML, CSS, JS, DJANGO, DATABASE 를 다룰 수 있습니다.</p>
+                <a href="index.html">첫 화면으로 가기</a><br>
+                <button onclick="whatTimeIsIt()">현재시간</button>
+                <hr>
+            </div>
+            <div class="col-3">
+                <img src="./images/coding.jpg" width="800px" class="img-fluid">
+            </div> 
+        </div>
+    </div>
+
+    <div class="container"> <!-- Grid는 12 구역으로 나뉘어 있음-->
+        <div class="row">
+            <div class="col-sm col-lg-6 bg-info">
+                <img src="./images/image1.jpg" class="img-fluid">
+            </div>
+            <div class="col-sm col-lg-3 bg-secondary">
+                <img src="./images/image2.jpg" class="img-fluid">
+            </div>
+            <div class="col-sm col-lg-3 bg-warning">
+                <img src="./images/image3.jpg" class="img-fluid">
+            </div>
+        </div>
     </div>
 </body>
 </html>
